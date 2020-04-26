@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="ru">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        Document
+        {% endblock title %}
+    </title>
+
+    
+    {% block styles %}
+    {% endblock styles %}
+
+    {% block head_scripts %}
+    {% endblock head_scripts %}
+
+</head>
+<body>
+
+    <header>
+        {% block content_header %}
+        {% endblock content_header %}
+    </header>
+
+    <main>
+        {% block content_main %}
+        {% endblock content_main %}
+    </main>
+    
+    <footer>
+        {% block content_footer %}
+        {% endblock content_footer %}
+    </footer>
+
+</body>
+{% block foot_scripts %}
+{% endblock foot_scripts %}
+</html>
