@@ -32,7 +32,7 @@ SECRET_KEY = conf_parser.get('keys', 'SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = conf_parser.getboolean('common', 'DEBUG', fallback=False)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['81.25.55.127',]
 
 
 # Application definition
